@@ -1,0 +1,38 @@
+<table>
+    <thead>
+        <tr>
+            <th colstan="5"> A Single Cat </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Gender</th>
+            <th>Description</th>
+            <th>Birthdate</th>
+            <th>Age</th>
+        </tr>
+                <tr>
+                    <td>
+                        <%=@cat.name%>
+                    </td>
+                    <td>
+                        <%=@cat.color%>
+                    </td>
+                    <td>
+                        <%=@cat.sex%>
+                    </td>
+                    <td>
+                        <%=@cat.description%>
+                    </td>
+                    <td>
+                        <%=@cat.birth_date%>
+                    </td>
+                    <td>
+                        <%=@cat.age%>
+                    </td>
+                </tr>
+    </tbody>
+</table>

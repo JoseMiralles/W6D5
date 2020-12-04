@@ -8,7 +8,7 @@ class Cat < ApplicationRecord
     validates :color, inclusion: ['Brown', 'Black', 'Grey', 'White', 'Orange', 'Spotted', 'Calico'], presence: true
     
     def age
-       time_ago_in_words(birth_date)
+       time_ago_in_words(self.birth_date)
     end
 
 end
