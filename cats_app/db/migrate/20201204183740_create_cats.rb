@@ -1,4 +1,4 @@
-require "action_view"
+
 
 class CreateCats < ActiveRecord::Migration[5.2]
   def change
