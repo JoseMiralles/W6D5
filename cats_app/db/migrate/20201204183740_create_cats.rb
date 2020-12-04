@@ -1,0 +1,17 @@
+require "action_view"
+
+class CreateCats < ActiveRecord::Migration[5.2]
+  def change
+    create_table :cats do |t|
+
+      t.date :birth_date, null: false
+      t.integer :age, null: false
+      t.string :color, null: false
+      t.string :name, null: false, index: true
+      t.string :sex, null: false, limit: 1
+      t.text :description
+      t.timestamps
+
+    end
+  end
+end
