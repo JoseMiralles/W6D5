@@ -1,1 +1,42 @@
 <h1>All the cats!</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th colstan="5"> All the cat details </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Gender</th>
+            <th>Description</th>
+            <th>Birthdate</th>
+            <th>Age</th>
+        </tr>
+            <%@cats.each do |cat|%>
+                <tr>
+                    <td>
+                        <%=cat.name%>
+                    </td>
+                    <td>
+                        <%=cat.color%>
+                    </td>
+                    <td>
+                        <%=cat.sex%>
+                    </td>
+                    <td>
+                        <%=cat.description%>
+                    </td>
+                    <td>
+                        <%=cat.birth_date%>
+                    </td>
+                    <td>
+                        <%=cat.age%>
+                    </td>
+                </tr>
+            <%end%>
+    </tbody>
+</table>
